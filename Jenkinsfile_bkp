@@ -36,6 +36,11 @@ pipeline {
           }
         }
       }
+      stage ('test') {
+       steps{
+         echo 'Testing'
+       }
+      }
       stage('Build Release') {
         when {
           branch 'master'
