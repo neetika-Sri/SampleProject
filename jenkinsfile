@@ -4,7 +4,9 @@ pipeline {
   stage('build') {
    steps {
     sh 'npm --version'
-    sh yarn test
+        sh echo " > install dependencies"
+        sh yarn install
+
 
    }
   }
