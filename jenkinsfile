@@ -6,7 +6,6 @@ pipeline {
     sh '''
         npm --version
         echo " > install dependencies"
-        yarn install
         echo " > running tests"
         pwd
        '''
